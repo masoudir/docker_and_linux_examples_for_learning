@@ -1,0 +1,18 @@
+version: "3.9"
+services:
+  farya_docker:
+    image: mytest:v1
+    container_name: "farya_ubuntu"
+    volumes:
+      - farya_volume:/workspaces
+      - farya_volume_external:/workspaces2
+      - /home/masoud/Music:/sync-workspace
+      - /dev:/dev
+    network_mode: "host"
+    tty: true
+
+volumes:
+  farya_volume:
+    external: false
+  farya_volume_external:
+    external: true
