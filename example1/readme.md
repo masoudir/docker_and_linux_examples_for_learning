@@ -5,7 +5,7 @@
 
     docker run -it myimage 
 
-    gcc main.c main.h
+    ./build.sh
 
 # How to run
 

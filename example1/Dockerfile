@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     g++ \
     gdb
 
-ADD code_for_test .
+ADD code .
 
 # Switch back to dialog for any ad-hoc use of apt-get
 ENV DEBIAN_FRONTEND=
