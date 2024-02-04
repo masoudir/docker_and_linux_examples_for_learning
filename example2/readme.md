@@ -3,7 +3,7 @@
 
     docker build -t myimage .
 
-    docker run -v code:/code_container -it myimage 
+    docker run -v $(pwd)/code:/code_container -it myimage 
 
     ./code_container/build.sh
 
