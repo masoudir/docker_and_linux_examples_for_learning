@@ -1,0 +1,1 @@
+gcc -g main.c main.h -o out
